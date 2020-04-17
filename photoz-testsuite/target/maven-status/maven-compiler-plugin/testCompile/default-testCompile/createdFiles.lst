@@ -1,0 +1,3 @@
+org/keycloak/quickstart/uma/page/PhotozPage.class
+org/keycloak/quickstart/uma/ArquillianAuthzUMATest.class
+org/keycloak/quickstart/uma/page/ConsentPage.class
