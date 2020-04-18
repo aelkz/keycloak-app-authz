@@ -70,7 +70,15 @@ public class AlbumService {
             getAuthzClient().protection().resource().delete(newAlbum.getExternalId());
         }
 
-        return Response.ok(newAlbum).build();
+        return Response
+                .ok(newAlbum)
+                .header("Access-Control-Allow-Origin", "*")
+                .header("Access-Control-Allow-Credentials", "true")
+                .header("Access-Control-Allow-Headers",
+                        "origin, content-type, accept, authorization")
+                .header("Access-Control-Allow-Methods",
+                        "GET, POST, PUT, DELETE, OPTIONS, HEAD")
+                .build();
     }
 
     @Path("{id}")
@@ -114,7 +122,15 @@ public class AlbumService {
             }
         }
 
-        return Response.ok(shares.values()).build();
+        return Response
+            .ok(shares.values())
+            .header("Access-Control-Allow-Origin", "*")
+            .header("Access-Control-Allow-Credentials", "true")
+            .header("Access-Control-Allow-Headers",
+                    "origin, content-type, accept, authorization")
+            .header("Access-Control-Allow-Methods",
+                    "GET, POST, PUT, DELETE, OPTIONS, HEAD")
+            .build();
     }
 
     @GET
