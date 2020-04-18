@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="photoz-uma-restful-api" />
-        <module name="maven-archiver (4)" />
+        <module name="maven-archiver (3)" />
         <module name="photoz-uma-testsuite" />
         <module name="photoz-uma-html5-client" />
-        <module name="photoz-uma-js-policies" />
+        <module name="maven-archiver (4)" />
         <module name="maven-archiver (1)" />
-        <module name="maven-archiver (3)" />
+        <module name="photoz-uma-js-policies" />
         <module name="maven-archiver (2)" />
       </profile>
     </annotationProcessing>
