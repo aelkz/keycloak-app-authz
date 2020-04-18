@@ -74,10 +74,14 @@ module.controller('GlobalCtrl', function ($scope, $http, $route, $location, Albu
 
 module.controller('TokenCtrl', function ($scope, Identity) {
     $scope.showRpt = function () {
+        console.log(Identity);
+
         document.getElementById("output").innerHTML = JSON.stringify(jwt_decode(Identity.authorization.rpt), null, '  ');
     }
 
     $scope.showAccessToken = function () {
+        console.log(Identity);
+
         document.getElementById("output").innerHTML = JSON.stringify(jwt_decode(Identity.authc.token), null, '  ');
     }
 
