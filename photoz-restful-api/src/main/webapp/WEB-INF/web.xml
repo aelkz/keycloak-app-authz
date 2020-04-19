@@ -8,6 +8,15 @@
 
 	<security-constraint>
 		<web-resource-collection>
+			<web-resource-name>Health Check</web-resource-name>
+			<url-pattern>/health</url-pattern>
+			<http-method>GET</http-method>
+		</web-resource-collection>
+		<!-- no auth-constraint tag here -->
+	</security-constraint>
+
+	<security-constraint>
+		<web-resource-collection>
 			<web-resource-name>All Resources</web-resource-name>
 			<url-pattern>/*</url-pattern>
 		</web-resource-collection>
