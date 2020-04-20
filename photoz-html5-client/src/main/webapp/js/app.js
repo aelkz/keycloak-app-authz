@@ -75,7 +75,7 @@ module.controller('GlobalCtrl', function ($scope, $http, $route, $location, Albu
 module.controller('TokenCtrl', function ($http, $scope, Identity) {
     $scope.status = function () {
         $http.get(apiUrl + '/health').success(function (data) {
-            document.getElementById("output").innerHTML = JSON.stringify(data);
+            document.getElementById("output").innerHTML = data;
         });
     };
 
