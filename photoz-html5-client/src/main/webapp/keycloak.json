@@ -3,5 +3,6 @@
   "auth-server-url": "https://sso74.apps.mw.consulting-rh-br.com/auth",
   "ssl-required": "external",
   "resource": "photoz-html5-client",
-  "public-client": true
+  "public-client": true,
+  "enable-cors": true
 }
