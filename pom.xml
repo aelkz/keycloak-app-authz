@@ -46,7 +46,7 @@
         <arquillian-managed>true</arquillian-managed> 
         <arquillian-drone-bom.version>2.5.1</arquillian-drone-bom.version> 
         <version.war.maven.plugin>2.6</version.war.maven.plugin> 
-        <version.junit>4.12</version.junit> 
+        <version.junit>4.13.1</version.junit> 
         <version.jackson>2.9.5</version.jackson> 
         <version.wildfly>14.0.1.Final</version.wildfly> 
         <version.keycloak>9.0.3</version.keycloak>
